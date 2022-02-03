@@ -12,6 +12,7 @@ body {
 }
 
 .quote-body {
+  width: 100%;
   max-width: 900px;
   padding: 1.25rem 1.875rem;
   background-color: rgba(255, 255, 255, 0.6);
@@ -34,6 +35,10 @@ body {
   font-size: 2rem;
   font-style: italic;
   font-weight: 600;
+}
+
+.long-quote {
+  font-size: 2rem;
 }
 
 .buttons {
