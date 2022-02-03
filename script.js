@@ -1,5 +1,5 @@
 const quoteBody = document.querySelector(".quote-body");
-const quoteText = document.querySelector(".quote-text");
+const quoteText = document.querySelector("#quote");
 const quoteAuthor = document.querySelector(".quote-author");
 const twitterBtn = document.getElementById("twitter");
 const newQuoteBtn = document.getElementById("new-quote");
