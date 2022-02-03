@@ -6,7 +6,20 @@ const newQuoteBtn = document.getElementById("new-quote");
 
 let quoteList = [];
 
+function loading() {
+  loader.hidden = false;
+  quoteBody.hidden = true;
+}
+
+function complete() {
+  quoteBody.hidden = false;
+  loader.hidden = true;
+}
+
+// Get a random quote from list
 function newQuote() {
+  loading();
+
   const quote = quoteList[Math.floor(Math.random() * quoteList.length)];
 
   if (!quote.author) {
@@ -22,16 +35,23 @@ function newQuote() {
   }
 
   quoteText.textContent = quote.text;
+  complete();
 }
 
+// Get a list of quotes from API
 async function getQuotes() {
+  loading();
+
   try {
     const response = await fetch("https://type.fit/api/quotes");
     quoteList = await response.json();
+
     newQuote();
+    complete();
   } catch (error) {}
 }
 
+// Share with quote on Twitter
 function tweetQuote() {
   const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.textContent} - ${quoteAuthor.textContent}`;
   window.open(twitterUrl, "_blank");
