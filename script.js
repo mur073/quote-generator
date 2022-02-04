@@ -39,7 +39,7 @@ function newQuote() {
 }
 
 // Get a list of quotes from API
-async function getQuotes() {
+async function getQuotesFromApi() {
   loading();
 
   try {
@@ -60,4 +60,4 @@ function tweetQuote() {
 newQuoteBtn.addEventListener("click", newQuote);
 twitterBtn.addEventListener("click", tweetQuote);
 
-getQuotes();
+getQuotesFromApi();
