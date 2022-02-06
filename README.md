@@ -1,6 +1,6 @@
 # Quote Generator
 
-Quote Generator is a JS App that shows a random
+Quote Generator is a JS App that shows a random quote
 
 ## Built With
 
