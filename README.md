@@ -8,9 +8,9 @@ Quote Generator is a JS App that shows a random quote
 - CSS
 - JavaScript
 
-## Licence
+## License
 
-Distributed under the [MIT](https://choosealicense.com/licenses/mit/) Licence.
+Distributed under the [MIT](https://choosealicense.com/licenses/mit/) License.
 
 ## Contact
 
